@@ -1,16 +1,27 @@
-.body{
+html{scroll-behavior:smooth;}
+* {
 
   margin: 0;
   padding: 0;
+  box-sizing:border-box;
   
 }
+body{ 
+  
+  background-color:white;
+  transition: all 10s ease;
+
+ 
+  
+}
+
 
 .titles{
   font-family: 'Roboto', sans-serif;
   font-weight: 900; 
-  font-size:3vw;
-  color: rgb(252, 132, 132);
- margin-bottom: 0px;
+  font-size:4vw;
+  color: rgb(102, 102, 102);
+ margin-bottom: 200px;
  margin-right:200px;
  margin-top:100px;
  
@@ -33,7 +44,7 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 700; 
   font-size:8vw;
-  color: rgb(255, 255, 255);
+  color: rgb(235, 235, 235);
   display: flex;
   flex-direction: row ;
   justify-content:flex-start;
@@ -43,24 +54,39 @@
  
 }
 
+.backgroundcolor1{
+  display: flexbox;
+  justify-content: center;
+  align-self: center;
+  background-color: #acacac;
+  height: 100%;
+}
+
 .animate__fadeInDown{ 
 
   font-family: 'Roboto', sans-serif;
   font-weight: 800; 
   font-size:2vw;
   color: rgb(71, 71, 71);
-  display: flexbox;
-
+  display: flex;
+  align-content: center;
+  height: 900px;
   flex-direction: row ;
-  justify-content:center;text-align: justify;
+ text-align: justify;
   margin-left:200px;
   margin-top:100px;
   margin-right:200px;
   margin-bottom: 100px;
-  background-color: 
-
-  
 }
+
+.intro-text{
+width: 100%;
+opacity: 0;
+transform: translateY(20px);
+transition:2.5s  all ease-in-out;}
+  
+.intro-appear {opacity: 1;
+transform: translateY(1px);}
 
 .backgroundcolor1{background-color: rgb(255, 255, 255);
   height: 700px;
@@ -69,13 +95,11 @@
 .bio2{
   font-family: 'Roboto', sans-serif;
   font-weight: 800; 
-  font-size:9vw;
-  color: rgb(255, 255, 255);
+  font-size:9vw;  
   display: flex;
   flex-direction: row ;
-  justify-content:flex-start;
-  margin-left:00px;
-  margin-top:-150px
+  justify-content:center;
+  margin-top:-100px
 }
 
 .full-height {
@@ -185,7 +209,7 @@
 .navbar-brand{
   font:30px Lato !important;
   text-transform:uppercase;
-  color:rgb(233, 107, 107) !important;
+  color:rgb(255, 248, 248) !important;
   letter-spacing:2px;
   margin-top:2px;
 }
@@ -195,8 +219,7 @@
 .nav{
   margin-bottom:0px;
   .a{
-
-    font:40px;
+     font:40px;
     color:rgb(196, 55, 55)   
     letter-spacing:2px;
     padding:16px !important;
@@ -244,8 +267,7 @@
   height:100%;
   top:0px;
   left:0px;
-  background:#EE445F !important;
-  z-index:0;
+  background:#b8b8b8 !important;
   opacity:0;
 }
 
@@ -273,10 +295,26 @@
   row-gap: 20px;
   margin-left: 200px;
   margin-right: 200px;
-  margin-bottom: 0;
+  margin-bottom: 200px;
 }
 
-.mb-3{
+.mb-3{font-family: Arial, Helvetica, sans-serif;
+  font-size: 70px;
   display: flexbox;
   justify-content: wrap;
+  margin-left:400px;
+  margin-right:400px;
+  margin-top: 0px;
+  color: #a1a1a1;
+  
+  
 }
+.formulario{
+  height: 900px;
+  display: flexbox;
+  justify-content: center;
+align-items:center;
+  
+}
+
+.bg-active{background-color: rgb(241, 241, 241);}
